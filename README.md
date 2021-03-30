@@ -39,9 +39,3 @@ For a more thorough checklist please refer to the latest Docker [CIS benchmark](
 ### Docker in your CI pipeline/building images safely
 * Consider using [Kaniko](https://github.com/GoogleContainerTools/kaniko) to build your containers in userspace.
 
-## Checks
-This script assesses if you're in a container through the following checks:
-* Presence of .dockerenv/.dockerinit files
-* Mentions of Docker in cgroups
-* Unusual PID 1 process (i.e. not an ordinary init process)
-* Lack of typical hardware management related processes.
